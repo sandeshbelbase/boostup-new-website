@@ -26,7 +26,7 @@ const services = [
 export default function ServicesSection() {
   return (
     <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6 text-center">
+      <div className=" container text-center">
         <motion.h2
           className="text-3xl md:text-4xl font-bold text-gray-900 mb-12"
           initial={{ opacity: 0, y: -20 }}
@@ -50,8 +50,7 @@ export default function ServicesSection() {
                 <img
                   src={service.image}
                   alt={service.title}
-                  fill
-                  className="object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-6">

@@ -2,7 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
 
+
+/* Animations */
 @keyframes mistFloat {
   0% {
     transform: translate(0, 0) scale(1);

@@ -26,7 +26,7 @@ export default function HeroSection() {
       <span className="absolute top-1/2 left-1/3 w-48 h-48 bg-[#187f50]/25 rounded-full blur-2xl animate-mist" />
 
       {/* Content */}
-      <div className="relative max-w-7xl mx-auto px-6 py-28 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+      <div className="relative container py-28 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
 
         {/* Left Content */}
         <motion.div
