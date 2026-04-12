@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 import { FaBuilding, FaHospital, FaDumbbell, FaGraduationCap, FaCoffee, FaHotel } from 'react-icons/fa';
 
 const clients = [
-  { name: "Ram Insurance", icon: <FaBuilding className="text-4xl" /> },
-  { name: "City Rehab", icon: <FaHospital className="text-4xl" /> },
-  { name: "Apex Gym", icon: <FaDumbbell className="text-4xl" /> },
-  { name: "Green Valley", icon: <FaGraduationCap className="text-4xl" /> },
-  { name: "Urban Cafe", icon: <FaCoffee className="text-4xl" /> },
-  { name: "Downtown Suites", icon: <FaHotel className="text-4xl" /> },
+  { name: "Ray White", icon: <FaBuilding className="text-4xl" /> },
+  { name: "Bob Berry", icon: <FaBuilding className="text-4xl" /> },
+  { name: "1000+ Happy Customers", icon: <FaCoffee className="text-4xl" /> },
+  { name: "Local Offices", icon: <FaGraduationCap className="text-4xl" /> },
+  { name: "Retail Stores", icon: <FaHospital className="text-4xl" /> },
+  { name: "Strata Budgets", icon: <FaHotel className="text-4xl" /> },
 ];
 
 // Duplicate the array to create a seamless infinite loop

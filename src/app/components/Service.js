@@ -6,21 +6,25 @@ import Link from "next/link";
 
 const services = [
   {
-    title: "Residential Cleaning",
-    description: "Eco‑friendly, thorough home cleaning for a fresh and spotless living space.",
+    title: "Bond Cleaning Dubbo",
+    description: "Get your bond back guaranteed with our detailed and professional end of lease cleaning.",
     image: "https://images.pexels.com/photos/4862376/pexels-photo-4862376.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
-    title: "Commercial Cleaning",
-    description: "Professional office and commercial cleaning services for a pristine workspace.",
+    title: "End of Lease Cleaning Dubbo",
+    description: "Comprehensive end of lease cleaning to ensure a spotless property for the next tenant.",
     image: "https://images.pexels.com/photos/6964288/pexels-photo-6964288.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
-    title: "Surface & Detail Cleaning",
-    description: "Expert surface and detail cleaning using safe and effective methods.",
+    title: "Builders Cleaning Dubbo",
+    description: "Post-construction or renovation cleaning to remove all dust, debris, and marks securely.",
     image: "https://images.pexels.com/photos/4968386/pexels-photo-4968386.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
-  // Add more services here if desired, but only show first 3 on homepage
+  {
+    title: "House Cleaning Dubbo",
+    description: "Reliable and thorough domestic home cleaning services for a fresh, spotless living space.",
+    image: "https://images.pexels.com/photos/6195129/pexels-photo-6195129.jpeg?auto=compress&cs=tinysrgb&w=800",
+  }
 ];
 
 export default function ServicesSection() {
@@ -36,8 +40,8 @@ export default function ServicesSection() {
           Our Services
         </motion.h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {services.slice(0, 3).map((service, index) => (
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {services.slice(0, 4).map((service, index) => (
             <motion.div
               key={index}
               className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition cursor-pointer"

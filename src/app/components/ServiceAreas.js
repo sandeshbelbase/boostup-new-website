@@ -42,7 +42,7 @@ export default function ServiceAreas() {
               </div>
             </div>
             <p className="text-lg text-gray-700 leading-relaxed font-medium">
-              We are prominently based in <strong className="text-[#187f50] font-black">Dubbo (NSW 2830)</strong> and provide our complete suite of cleaning services locally. However, we're extending our reach and happily serve nearby surrounding regions!
+              We are prominently based in <strong className="text-[#187f50] font-black">Dubbo, Wellington, and Narromine</strong> and provide our complete suite of cleaning services locally. However, we're extending our reach and happily serve nearby surrounding regions!
             </p>
           </div>
         </motion.div>

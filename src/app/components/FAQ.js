@@ -6,6 +6,10 @@ import { FaChevronDown } from 'react-icons/fa';
 
 const faqs = [
   {
+    question: "How much is bond back guarantee cleaning?",
+    answer: "Starts from $500 for a 2-bedroom. Final price depends on condition. Free estimate or call for inspection."
+  },
+  {
     question: "Do I need to be home during the cleaning?",
     answer: "No, you do not need to be home. As long as we have a way to access your property (like a spare key or garage code), our team can clean while you are at work or out running errands. We are fully insured and background-checked for your peace of mind."
   },

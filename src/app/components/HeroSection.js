@@ -39,14 +39,26 @@ export default function HeroSection() {
           </span>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
-            Professional Cleaning <br />
-            That Feels Refreshing
+            Top-Rated Cleaning Service in Dubbo – 90+ 5⭐ Reviews
           </h1>
 
           <p className="mt-6 text-lg text-gray-700 max-w-xl">
-            Residential and commercial cleaning delivered with care, consistency,
+            Based in Dubbo & Surrounding Areas • 100% Satisfaction Guarantee. Residential and commercial cleaning delivered with care, consistency,
             and attention to detail. Your space — truly refreshed.
           </p>
+
+          {/* Google Rating Section */}
+          <div className="mt-6 flex items-center gap-2">
+            <div className="flex gap-1 text-yellow-500">
+              <span className="text-xl leading-none">★</span>
+              <span className="text-xl leading-none">★</span>
+              <span className="text-xl leading-none">★</span>
+              <span className="text-xl leading-none">★</span>
+              <span className="text-xl leading-none">★</span>
+            </div>
+            <span className="text-gray-900 font-bold text-lg leading-none">4.9</span>
+            <span className="text-gray-600 text-sm font-medium tracking-wide">Google Reviews</span>
+          </div>
 
           {/* Benefits */}
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
