@@ -8,7 +8,7 @@ const allServices = [
     title: "House Cleaning",
     description: "Comprehensive home cleaning tailored to your lifestyle. We ensure every room is spotless, sanitized, and refreshing.",
     extraInfo: "Our detailed check-list covers vacuuming, mopping, dusting of all surfaces, wiping down baseboards, and intensive kitchen/bathroom sanitation. We treat your home with the utmost respect so you can come back to a perfect environment.",
-    image: "https://images.pexels.com/photos/4862376/pexels-photo-4862376.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/images/house.jpeg",
   },
   {
     title: "Commercial & Office Cleaning",
@@ -20,7 +20,7 @@ const allServices = [
     title: "Bond / End of Lease Cleaning",
     description: "Get your full deposit back. We specialize in deep end-of-lease cleans that strict landlords and real estate agents demand.",
     extraInfo: "We know exactly what property managers look for during final inspections. We tackle stubborn oven grease, window tracks, carpet spot treatments, and wall marks to guarantee a flawless handover.",
-    image: "https://images.pexels.com/photos/6195125/pexels-photo-6195125.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/images/floor.jpeg",
   },
   {
     title: "Gardening & Exterior Maintenance",
@@ -39,6 +39,12 @@ const allServices = [
     description: "Intensive cleaning targeting grease, grime, and hard-to-reach areas that regular maintenance cleaning misses.",
     extraInfo: "Perfect for spring cleaning! We will pull out appliances to clean behind them, scrub tile grout, clean inside cabinets, and wash blinds to restore your space to a brand-new feel.",
     image: "https://images.pexels.com/photos/4968386/pexels-photo-4968386.jpeg?auto=compress&cs=tinysrgb&w=800",
+  },
+  {
+    title: "Mould Clean",
+    description: "Intensive cleaning targeting grease, grime, and hard-to-reach areas that regular maintenance cleaning misses.",
+    extraInfo: "Perfect for spring cleaning! We will pull out appliances to clean behind them, scrub tile grout, clean inside cabinets, and wash blinds to restore your space to a brand-new feel.",
+    image: "/images/mould.jpeg",
   },
 ];
 

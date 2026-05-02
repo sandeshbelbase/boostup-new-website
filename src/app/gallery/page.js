@@ -2,18 +2,15 @@ import Image from "next/image";
 
 // Pre-defined dummy gallery images matching the "before / after" theme or cleaning themes
 const galleryImages = [
-  "https://images.pexels.com/photos/4099307/pexels-photo-4099307.jpeg?auto=compress&cs=tinysrgb&w=800",
-  "https://images.pexels.com/photos/6195129/pexels-photo-6195129.jpeg?auto=compress&cs=tinysrgb&w=800",
-  "https://images.pexels.com/photos/4108715/pexels-photo-4108715.jpeg?auto=compress&cs=tinysrgb&w=800",
-  "https://images.pexels.com/photos/4099306/pexels-photo-4099306.jpeg?auto=compress&cs=tinysrgb&w=800",
-  "https://images.pexels.com/photos/4239013/pexels-photo-4239013.jpeg?auto=compress&cs=tinysrgb&w=800",
-  "https://images.pexels.com/photos/4099414/pexels-photo-4099414.jpeg?auto=compress&cs=tinysrgb&w=800",
-  "https://images.pexels.com/photos/4890637/pexels-photo-4890637.jpeg?auto=compress&cs=tinysrgb&w=800",
-  "https://images.pexels.com/photos/6195125/pexels-photo-6195125.jpeg?auto=compress&cs=tinysrgb&w=800",
-  "https://images.pexels.com/photos/4099318/pexels-photo-4099318.jpeg?auto=compress&cs=tinysrgb&w=800",
-  "https://images.pexels.com/photos/4108714/pexels-photo-4108714.jpeg?auto=compress&cs=tinysrgb&w=800",
-  "https://images.pexels.com/photos/4239129/pexels-photo-4239129.jpeg?auto=compress&cs=tinysrgb&w=800",
-  "https://images.pexels.com/photos/4098583/pexels-photo-4098583.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "/images/ba-2.jpeg",
+  "/images/ba-1.jpeg",
+  "/images/ba-3.jpeg",
+  "/images/ba-4.jpeg",
+  "/images/ba-5.jpeg",
+  "/images/ba-6.jpeg",
+  "/images/ba-7.jpeg",
+  "/images/ba-8.jpeg",
+
 ];
 
 export const metadata = {
@@ -33,10 +30,10 @@ export default function GalleryPage() {
         </p>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {galleryImages.map((src, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="relative w-full h-64 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow group"
             >
               <img
