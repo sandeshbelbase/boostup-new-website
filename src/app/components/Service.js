@@ -6,25 +6,29 @@ import Link from "next/link";
 
 const services = [
   {
-    title: "Bond Cleaning Dubbo",
-    description: "Get your bond back guaranteed with our detailed and professional end of lease cleaning.",
-    image: "https://images.pexels.com/photos/4862376/pexels-photo-4862376.jpeg?auto=compress&cs=tinysrgb&w=800",
+    title: "House Cleaning",
+    description: "Comprehensive home cleaning tailored to your lifestyle. We ensure every room is spotless, sanitized, and refreshing.",
+    extraInfo: "Our detailed check-list covers vacuuming, mopping, dusting of all surfaces, wiping down baseboards, and intensive kitchen/bathroom sanitation. We treat your home with the utmost respect so you can come back to a perfect environment.",
+    image: "/images/house.jpeg",
   },
   {
-    title: "End of Lease Cleaning Dubbo",
-    description: "Comprehensive end of lease cleaning to ensure a spotless property for the next tenant.",
-    image: "https://images.pexels.com/photos/6964288/pexels-photo-6964288.jpeg?auto=compress&cs=tinysrgb&w=800",
+    title: "Commercial & Office Cleaning",
+    description: "Professional workplace cleaning that boosts productivity and leaves a lasting impression on your clients and staff.",
+    extraInfo: "We customize our cleaning schedules around your business hours. From breakroom deep cleans to desk sanitization and trash removal, we maintain a hygienic environment that keeps your workforce healthy.",
+    image:"images/office.jpeg"
+  },
+    {
+    title: "Window & Exterior Cleaning",
+    description: "Professional workplace cleaning that boosts productivity and leaves a lasting impression on your clients and staff.",
+    extraInfo: "We customize our cleaning schedules around your business hours. From breakroom deep cleans to desk sanitization and trash removal, we maintain a hygienic environment that keeps your workforce healthy.",
+    image: "images/commercial.jpeg",
   },
   {
-    title: "Builders Cleaning Dubbo",
-    description: "Post-construction or renovation cleaning to remove all dust, debris, and marks securely.",
-    image: "https://images.pexels.com/photos/4968386/pexels-photo-4968386.jpeg?auto=compress&cs=tinysrgb&w=800",
+    title: "Bond / End of Lease Cleaning",
+    description: "Get your full deposit back. We specialize in deep end-of-lease cleans that strict landlords and real estate agents demand.",
+    extraInfo: "We know exactly what property managers look for during final inspections. We tackle stubborn oven grease, window tracks, carpet spot treatments, and wall marks to guarantee a flawless handover.",
+    image: "/images/bond.jpeg",
   },
-  {
-    title: "House Cleaning Dubbo",
-    description: "Reliable and thorough domestic home cleaning services for a fresh, spotless living space.",
-    image: "https://images.pexels.com/photos/6195129/pexels-photo-6195129.jpeg?auto=compress&cs=tinysrgb&w=800",
-  }
 ];
 
 export default function ServicesSection() {

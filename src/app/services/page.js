@@ -14,31 +14,44 @@ const allServices = [
     title: "Commercial & Office Cleaning",
     description: "Professional workplace cleaning that boosts productivity and leaves a lasting impression on your clients and staff.",
     extraInfo: "We customize our cleaning schedules around your business hours. From breakroom deep cleans to desk sanitization and trash removal, we maintain a hygienic environment that keeps your workforce healthy.",
-    image: "https://images.pexels.com/photos/6964288/pexels-photo-6964288.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image:"images/office.jpeg"
+  },
+    {
+    title: "Window & Exterior Cleaning",
+    description: "Professional workplace cleaning that boosts productivity and leaves a lasting impression on your clients and staff.",
+    extraInfo: "We customize our cleaning schedules around your business hours. From breakroom deep cleans to desk sanitization and trash removal, we maintain a hygienic environment that keeps your workforce healthy.",
+    image: "images/commercial.jpeg",
   },
   {
     title: "Bond / End of Lease Cleaning",
     description: "Get your full deposit back. We specialize in deep end-of-lease cleans that strict landlords and real estate agents demand.",
     extraInfo: "We know exactly what property managers look for during final inspections. We tackle stubborn oven grease, window tracks, carpet spot treatments, and wall marks to guarantee a flawless handover.",
-    image: "/images/floor.jpeg",
+    image: "/images/bond.jpeg",
   },
+
   {
     title: "Gardening & Exterior Maintenance",
     description: "Complete outdoor care including lawn mowing, pruning, and debris removal to boost your property's curb appeal.",
     extraInfo: "Your exterior is just as important as the interior. Our crew will trim hedges, clear walkways, weed garden beds, and haul away green waste to transform your outdoor living space.",
-    image: "https://images.pexels.com/photos/8089330/pexels-photo-8089330.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/images/garden.jpeg",
+  },
+    {
+    title: "Domestic Assistance",
+    description: "Intensive cleaning targeting grease, grime, and hard-to-reach areas that regular maintenance cleaning misses.",
+    extraInfo: "Perfect for spring cleaning! We will pull out appliances to clean behind them, scrub tile grout, clean inside cabinets, and wash blinds to restore your space to a brand-new feel.",
+    image: "/images/domestic.jpeg",
   },
   {
-    title: "Renovation Cleaning",
+    title: "Builder Cleaning",
     description: "Detailed post-construction cleanup to safely remove heavy dust, paint marks, and debris after your remodeling project.",
     extraInfo: "Construction dust hides everywhere. We perform specialized air-vent wipe downs, intensive floor detailing, and window washing to make your newly renovated space livable and air-safe.",
-    image: "https://images.pexels.com/photos/4239103/pexels-photo-4239103.jpeg?auto=compress&cs=tinysrgb&w=800",
-  },
+    image:"/images/builder.jpeg"
+    },
   {
     title: "Deep Detail Clean",
     description: "Intensive cleaning targeting grease, grime, and hard-to-reach areas that regular maintenance cleaning misses.",
     extraInfo: "Perfect for spring cleaning! We will pull out appliances to clean behind them, scrub tile grout, clean inside cabinets, and wash blinds to restore your space to a brand-new feel.",
-    image: "https://images.pexels.com/photos/4968386/pexels-photo-4968386.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image:"/images/deep.jpeg"  
   },
   {
     title: "Mould Clean",
@@ -46,6 +59,7 @@ const allServices = [
     extraInfo: "Perfect for spring cleaning! We will pull out appliances to clean behind them, scrub tile grout, clean inside cabinets, and wash blinds to restore your space to a brand-new feel.",
     image: "/images/mould.jpeg",
   },
+  
 ];
 
 function ServiceCard({ service, index }) {

@@ -109,8 +109,15 @@ export default function Footer() {
                     BOOST UP Cleaning Service
                   </a>
                 </blockquote>
+                
               </div>
+             
+             
             </div>
+            <br/>
+             <div style={{width:"300px"}}>
+                  <img src='images/award.jpeg'/>
+                </div>
           </div>
         </div>
 
