@@ -1,10 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaShieldAlt, FaLeaf, FaSmile, FaUsers } from "react-icons/fa";
+import { FaShieldAlt, FaLeaf, FaSmile, FaUsers,FaUserShield } from "react-icons/fa";
 
 const features = [
-  {
+  
+    {
+    icon: <FaUserShield className="w-10 h-10 text-[#187f50]" />,
+    title: "Safety & Quality Assurance",
+    description: "Our Team follow WHS-compliant practices, industry-standard cleaning methods, and structured safety procedures.",
+  },{
     icon: <FaShieldAlt className="w-10 h-10 text-[#187f50]" />,
     title: "Fully Insured & Trusted",
     description: "Our team is fully insured and background-checked, giving you peace of mind every time.",
@@ -19,11 +24,11 @@ const features = [
     title: "Satisfaction Guaranteed",
     description: "We don’t consider a job done until you are 100% satisfied with the results.",
   },
-  {
-    icon: <FaUsers className="w-10 h-10 text-[#187f50]" />,
-    title: "Experienced Professionals",
-    description: "Our cleaning specialists are trained, professional, and highly experienced.",
-  },
+  // {
+  //   icon: <FaUsers className="w-10 h-10 text-[#187f50]" />,
+  //   title: "Experienced Professionals",
+  //   description: "Our cleaning specialists are trained, professional, and highly experienced.",
+  // },
 ];
 
 export default function FeaturesSection() {

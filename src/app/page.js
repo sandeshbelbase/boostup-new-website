@@ -12,22 +12,22 @@ import CTA from "./components/CTA";
 
 export default function Home() {
   return (
-   <div>
-    <HeroSection/>
-    <ServicesSection/>
-    <HowItWorks/>
-    <div id="about-us">
-      <FeaturesSection/>
-      <WorkDone/>
+    <div>
+      <HeroSection />
+      <ServicesSection />
+      <HowItWorks />
+      <div id="about-us">
+        <FeaturesSection />
+        <WorkDone />
+      </div>
+      <Reviews />
+      <div id="service-areas">
+        <ServiceAreas />
+      </div>
+      <FAQ />
+      <div id="contact-us">
+        <CTA />
+      </div>
     </div>
-    <Reviews/>
-    <div id="service-areas">
-      <ServiceAreas/>
-    </div>
-    <FAQ/>
-    <div id="contact-us">
-      <CTA/>
-    </div>
-   </div>
   );
 }

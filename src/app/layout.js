@@ -13,13 +13,10 @@ export const metadata = {
     description: "Top-rated professional cleaning services in Dubbo and surrounding NSW. Book today for a spotless home or office.",
     url: "https://boostupcleaningservices.au",
     siteName: "Boostup Cleaning Service",
-    images: ["/images/logo.png"],
     locale: "en_AU",
     type: "website",
   },
   icons: {
-    icon: "/images/logo.png",
-    apple: "/images/logo.png",
   },
 };
 
