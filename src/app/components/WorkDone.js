@@ -12,7 +12,7 @@ const clients = [
     alt: "Raine",
   },
   {
-    image: "./images/elder.png",
+    image: "./images/Pinnacle.svg",
     alt: "Elder Real Estate",
   },
   {
