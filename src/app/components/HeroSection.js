@@ -39,7 +39,7 @@ export default function HeroSection() {
           </span>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
-            Top-Rated Cleaning Service in Dubbo – 90+ 5⭐ Reviews
+            Top-Rated Cleaning Service in Dubbo – 100+ 5⭐ Reviews
           </h1>
 
           <p className="mt-6 text-lg text-gray-700 max-w-xl">
