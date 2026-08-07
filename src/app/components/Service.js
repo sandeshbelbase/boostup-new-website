@@ -12,6 +12,12 @@ const services = [
     image: "/images/house.jpeg",
   },
   {
+  title: "NDIS Cleaning",
+  description: "Reliable cleaning support tailored to individual needs. We help maintain a clean, safe, and comfortable home environment.",
+  extraInfo: "Our detailed checklist covers vacuuming, mopping, dusting, surface cleaning, kitchen and bathroom sanitation, and other household cleaning tasks. We work respectfully around individual routines and preferences, helping create a hygienic and welcoming space.",
+  image: "/images/ndis.jpeg",
+  },
+  {
     title: "Commercial & Office Cleaning",
     description: "Professional workplace cleaning that boosts productivity and leaves a lasting impression on your clients and staff.",
     extraInfo: "We customize our cleaning schedules around your business hours. From breakroom deep cleans to desk sanitization and trash removal, we maintain a hygienic environment that keeps your workforce healthy.",

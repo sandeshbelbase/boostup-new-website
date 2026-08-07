@@ -85,12 +85,12 @@ export default function HeroSection() {
 
           {/* CTA */}
           <div className="mt-10 flex flex-wrap gap-4">
-            <Link
-              href="/contact-us"
+            <a
+              href="#contact-us"
               className="bg-[#187f50] text-white px-8 py-4 rounded-md font-semibold hover:bg-[#136640] transition shadow-lg"
             >
               Get a Free Quote
-            </Link>
+            </a>
 
             <a
               href="tel:0450036511"
