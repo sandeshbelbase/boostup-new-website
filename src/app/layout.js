@@ -23,7 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body>
+      <body suppressHydrationWarning>
         <div>
           <Header/>
         {children}

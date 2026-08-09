@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { FaMapMarkerAlt, FaLocationArrow } from 'react-icons/fa';
 
 const locations = [
+  "Dubbo NSW 2830",
   "Geurie NSW 2818",
   "Warren NSW 2824",
   "Trangie NSW 2823",

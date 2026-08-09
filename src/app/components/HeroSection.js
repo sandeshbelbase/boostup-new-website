@@ -1,13 +1,11 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { FaCheckCircle, FaPhoneAlt } from "react-icons/fa";
 
 export default function HeroSection() {
   return (
     <section className="relative overflow-hidden bg-gray-50">
-
       {/* Cleaning Background */}
       <div
         className="absolute inset-0 bg-cover bg-center animate-bg-pan"
@@ -27,7 +25,6 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative container py-28 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
-
         {/* Left Content */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -43,8 +40,9 @@ export default function HeroSection() {
           </h1>
 
           <p className="mt-6 text-lg text-gray-700 max-w-xl">
-            Based in Dubbo & Surrounding Areas • 100% Satisfaction Guarantee. Residential and commercial cleaning delivered with care, consistency,
-            and attention to detail. Your space — truly refreshed.
+            Based in Dubbo & Surrounding Areas • 100% Satisfaction Guarantee.
+            Residential and commercial cleaning delivered with care,
+            consistency, and attention to detail. Your space — truly refreshed.
           </p>
 
           {/* Google Rating Section */}
@@ -56,8 +54,12 @@ export default function HeroSection() {
               <span className="text-xl leading-none">★</span>
               <span className="text-xl leading-none">★</span>
             </div>
-            <span className="text-gray-900 font-bold text-lg leading-none">4.9</span>
-            <span className="text-gray-600 text-sm font-medium tracking-wide">Google Reviews</span>
+            <span className="text-gray-900 font-bold text-lg leading-none">
+              4.9/5
+            </span>
+            <span className="text-gray-600 text-sm font-medium tracking-wide">
+              Google Reviews
+            </span>
           </div>
 
           {/* Benefits */}
@@ -119,7 +121,6 @@ export default function HeroSection() {
             </p>
           </div>
         </motion.div>
-
       </div>
     </section>
   );
