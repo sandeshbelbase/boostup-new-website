@@ -58,14 +58,17 @@ export default function CTA() {
 
     const form = event.target;
     const formData = new FormData(form);
-    const payload = {
-      fullname: formData.get("fullname"),
-      email: formData.get("email"),
-      yourquery: formData.get("yourquery"),
-      company: formData.get("company"), // honeypot
-      formRenderedAt,
-      turnstileToken,
-    };
+     const payload = {
+  fullname: formData.get("fullname"),
+  email: formData.get("email"),
+  service: formData.get("service"),
+  suburb: formData.get("suburb"),
+  propertyType: formData.get("propertyType"),
+  yourquery: formData.get("yourquery"),
+  company: formData.get("company"), // honeypot
+  formRenderedAt,
+  turnstileToken,
+};
 
     try {
       const response = await fetch("/api/contact", {
