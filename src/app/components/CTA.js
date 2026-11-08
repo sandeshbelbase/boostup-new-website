@@ -145,107 +145,176 @@ export default function CTA() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <form onSubmit={handleSubmit} className="space-y-6">
-                {/* Honeypot field: hidden from real users, bots tend to fill every input */}
-                <input
-                  type="text"
-                  name="company"
-                  tabIndex={-1}
-                  autoComplete="off"
-                  className="absolute -left-[9999px] w-px h-px opacity-0"
-                  aria-hidden="true"
-                />
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label
-                      htmlFor="fullname"
-                      className="block text-sm font-bold text-gray-700 mb-2"
-                    >
-                      Full name *
-                    </label>
-                    <input
-                      id="fullname"
-                      type="text"
-                      name="fullname"
-                      required
-                      maxLength={200}
-                      autoComplete="name"
-                      className="w-full px-5 py-4 rounded-xl border border-gray-200 outline-none focus:border-[#187f50] focus:ring-2 focus:ring-[#187f50]/20 transition-all bg-gray-50 focus:bg-white"
-                      placeholder="John Doe"
-                    />
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="email"
-                      className="block text-sm font-bold text-gray-700 mb-2"
-                    >
-                      Email *
-                    </label>
-                    <input
-                      id="email"
-                      type="email"
-                      name="email"
-                      required
-                      maxLength={200}
-                      autoComplete="email"
-                      className="w-full px-5 py-4 rounded-xl border border-gray-200 outline-none focus:border-[#187f50] focus:ring-2 focus:ring-[#187f50]/20 transition-all bg-gray-50 focus:bg-white"
-                      placeholder="john@example.com"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label
-                    htmlFor="yourquery"
-                    className="block text-sm font-bold text-gray-700 mb-2"
-                  >
-                    Your query *
-                  </label>
-                  <textarea
-                    id="yourquery"
-                    name="yourquery"
-                    required
-                    rows="5"
-                    maxLength={5000}
-                    className="w-full px-5 py-4 rounded-xl border border-gray-200 outline-none focus:border-[#187f50] focus:ring-2 focus:ring-[#187f50]/20 transition-all bg-gray-50 focus:bg-white resize-none"
-                    placeholder="How can we help you?"
-                  ></textarea>
-                </div>
+             
+<form onSubmit={handleSubmit} className="space-y-6">
+  {/* Honeypot field */}
+  <input
+    type="text"
+    name="company"
+    tabIndex={-1}
+    autoComplete="off"
+    className="absolute -left-[9999px] w-px h-px opacity-0"
+    aria-hidden="true"
+  />
 
-                <Script
-                  src="https://challenges.cloudflare.com/turnstile/v0/api.js"
-                  strategy="afterInteractive"
-                  onLoad={renderTurnstile}
-                  onError={() => setTurnstileFailed(true)}
-                />
-                <div ref={turnstileRef} />
-                {turnstileFailed && (
-                  <p className="text-sm text-red-700" role="alert">
-                    Verification failed to load. Please disable any ad-blockers
-                    for this site and refresh the page.
-                  </p>
-                )}
+  {/* Full Name & Email */}
+  <div className="grid md:grid-cols-2 gap-6">
+    <div>
+      <label htmlFor="fullname" className="block text-sm font-bold text-gray-700 mb-2">
+        Full name *
+      </label>
+      <input
+        id="fullname"
+        type="text"
+        name="fullname"
+        required
+        maxLength={200}
+        autoComplete="name"
+        className="w-full px-5 py-4 rounded-xl border border-gray-200 outline-none focus:border-[#187f50] focus:ring-2 focus:ring-[#187f50]/20 transition-all bg-gray-50 focus:bg-white"
+        placeholder="John Doe"
+      />
+    </div>
 
-                <button
-                  type="submit"
-                  disabled={isSubmitting || !turnstileToken}
-                  className="w-full flex items-center justify-center gap-3 bg-[#1f7e51] text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-[#135d3b] transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 active:translate-y-0 disabled:opacity-70 disabled:cursor-not-allowed"
-                >
-                  <FaPaperPlane />
-                  {isSubmitting ? "Sending Request..." : "Send Message"}
-                </button>
+    <div>
+      <label htmlFor="email" className="block text-sm font-bold text-gray-700 mb-2">
+        Email *
+      </label>
+      <input
+        id="email"
+        type="email"
+        name="email"
+        required
+        maxLength={200}
+        autoComplete="email"
+        className="w-full px-5 py-4 rounded-xl border border-gray-200 outline-none focus:border-[#187f50] focus:ring-2 focus:ring-[#187f50]/20 transition-all bg-gray-50 focus:bg-white"
+        placeholder="john@example.com"
+      />
+    </div>
+  </div>
 
-                {status && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    role={status.type === "error" ? "alert" : "status"}
-                    aria-live="polite"
-                    className={`p-5 rounded-xl font-medium text-sm flex items-center gap-3 ${status.type === "success" ? "bg-[#e8f6ef] text-[#135d3b] border border-[#187f50]/20" : "bg-red-50 text-red-700 border border-red-200"}`}
-                  >
-                    {status.message}
-                  </motion.div>
-                )}
-              </form>
+  {/* Service Required & Suburb */}
+  <div className="grid md:grid-cols-2 gap-6">
+    <div>
+      <label htmlFor="service" className="block text-sm font-bold text-gray-700 mb-2">
+        Service Required *
+      </label>
+      <select
+        id="service"
+        name="service"
+        required
+        defaultValue=""
+        className="w-full px-5 py-4 rounded-xl border border-gray-200 outline-none focus:border-[#187f50] focus:ring-2 focus:ring-[#187f50]/20 transition-all bg-gray-50 focus:bg-white"
+      >
+        <option value="" disabled>Select a service</option>
+        <option value="House Cleaning">House Cleaning</option>
+        <option value="End of Lease Cleaning">End of Lease Cleaning</option>
+        <option value="Industrial Cleaning">Industrial Cleaning</option>
+        <option value="NDIS Cleaning">NDIS Cleaning</option>
+        <option value="Regular House Cleaning">Regular House Cleaning</option>
+        <option value="Office Cleaning">Office Cleaning</option>
+      </select>
+    </div>
+
+    <div>
+      <label htmlFor="suburb" className="block text-sm font-bold text-gray-700 mb-2">
+        Suburb *
+      </label>
+      <input
+        id="suburb"
+        type="text"
+        name="suburb"
+        required
+        maxLength={150}
+        autoComplete="address-level2"
+        className="w-full px-5 py-4 rounded-xl border border-gray-200 outline-none focus:border-[#187f50] focus:ring-2 focus:ring-[#187f50]/20 transition-all bg-gray-50 focus:bg-white"
+        placeholder="e.g. Dubbo"
+      />
+    </div>
+  </div>
+
+  {/* Property Type */}
+  <div>
+    <label htmlFor="propertyType" className="block text-sm font-bold text-gray-700 mb-2">
+      Property Type *
+    </label>
+    <select
+      id="propertyType"
+      name="propertyType"
+      required
+      defaultValue=""
+      className="w-full px-5 py-4 rounded-xl border border-gray-200 outline-none focus:border-[#187f50] focus:ring-2 focus:ring-[#187f50]/20 transition-all bg-gray-50 focus:bg-white"
+    >
+      <option value="" disabled>Select property type</option>
+      <option value="Residential House">Residential House</option>
+      <option value="Apartment / Unit">Apartment / Unit</option>
+      <option value="Office">Office</option>
+      <option value="Commercial Property">Commercial Property</option>
+      <option value="Industrial Property">Industrial Property</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+
+  {/* Additional Details */}
+  <div>
+    <label htmlFor="yourquery" className="block text-sm font-bold text-gray-700 mb-2">
+      Additional Details *
+    </label>
+    <textarea
+      id="yourquery"
+      name="yourquery"
+      required
+      rows={5}
+      maxLength={5000}
+      className="w-full px-5 py-4 rounded-xl border border-gray-200 outline-none focus:border-[#187f50] focus:ring-2 focus:ring-[#187f50]/20 transition-all bg-gray-50 focus:bg-white resize-none"
+      placeholder="Please provide details about your cleaning requirements, property size, preferred date, frequency, or any specific requests..."
+    />
+  </div>
+
+  {/* Cloudflare Turnstile */}
+  <Script
+    src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+    strategy="afterInteractive"
+    onLoad={renderTurnstile}
+    onError={() => setTurnstileFailed(true)}
+  />
+
+  <div ref={turnstileRef} />
+
+  {turnstileFailed && (
+    <p className="text-sm text-red-700" role="alert">
+      Verification failed to load. Please disable any ad-blockers
+      for this site and refresh the page.
+    </p>
+  )}
+
+  {/* Submit Button */}
+  <button
+    type="submit"
+    disabled={isSubmitting || !turnstileToken}
+    className="w-full flex items-center justify-center gap-3 bg-[#1f7e51] text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-[#135d3b] transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 active:translate-y-0 disabled:opacity-70 disabled:cursor-not-allowed"
+  >
+    <FaPaperPlane />
+    {isSubmitting ? "Sending Request..." : "Send Message"}
+  </button>
+
+  {/* Status Message */}
+  {status && (
+    <motion.div
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      role={status.type === "error" ? "alert" : "status"}
+      aria-live="polite"
+      className={`p-5 rounded-xl font-medium text-sm flex items-center gap-3 ${
+        status.type === "success"
+          ? "bg-[#e8f6ef] text-[#135d3b] border border-[#187f50]/20"
+          : "bg-red-50 text-red-700 border border-red-200"
+      }`}
+    >
+      {status.message}
+    </motion.div>
+  )}
+</form>
+
             </motion.div>
           </div>
 
